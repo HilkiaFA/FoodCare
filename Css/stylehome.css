@@ -1,0 +1,645 @@
+
+html::-webkit-scrollbar{
+  width:0.6rem;
+}
+    html::-webkit-scrollbar-track{
+  background:#A1A9AF;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:#808B93;
+  border-radius: 50px;
+}
+body{
+    font-family: poppins;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+#navbar{
+    background: #2C6752;
+    height:80px;
+    border-bottom: 1px solid #255A47;
+}
+#textnav{
+    color:#fff;
+    font-family: poppins;
+  }
+#logo{
+    position: relative;
+    left:95px;
+}
+.slibe{
+    width: 100%;
+    background: #2C6752;
+    height:250px;
+    margin-top: -50px;
+}
+.gallery{
+    width: 1100px;
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 30px;
+    margin-left: -5px;
+  }
+  .gallery div{
+     width: 1100px;
+     display: grid;
+     grid-template-columns: auto auto auto;
+     grid-gap: 7px;
+     padding: 10px;
+     flex: none;
+  }
+  .gallery div img{
+    width: 350px;
+    border-radius: 6px;
+  }
+  .gallery::-webkit-scrollbar{
+    display: none;
+  }
+  .gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% auto;
+  }
+  #backBtn,#nextBtn{
+   width: 50px;
+   margin-top:30px;
+   cursor: pointer;
+  }
+  #backBtn{
+    position: relative;
+    right:-17px;
+  }
+  #nextBtn{
+    position: relative;
+    left:-17px;
+  }
+
+#tbl1{
+    margin-left: 0px; 
+    margin-top:5px;
+}
+#tbl2{
+    margin-left: 20px;
+     margin-top:5px;
+}
+.boxsaldo{
+    width: 1078px;
+    background-color: #fff;
+   margin-top: -40px;
+    height: 80px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add the box shadow here */
+}
+.icon{
+    position: relative;
+    top:17px;
+    left: 20px;
+}
+.totalsaldo{
+    color: rgba(148, 148, 148, 1);
+    position: relative;
+    margin-left: 80px;
+    top:-14px;
+    font-weight: 500;
+    font-family: poppins;  
+}
+.saldo{
+    color: black;
+    position: relative;
+    margin-left: 170px;
+    top:-53px;
+    font-weight: 700;
+    font-family: poppins;  
+}
+#btnisi{
+color: rgba(227, 113, 45, 1);
+border-radius: 6px;
+width: 107px;
+height:44px;
+padding: 10px 16px 10px 16px;
+border-radius: 4px;
+border: 1px;
+gap: 10px;
+top:-104px;
+left:950px;
+position: relative;
+font-weight: 500;
+font-family: poppins;
+border: 1px solid rgba(227, 113, 45, 1);
+}
+.judul1{
+    margin-left: 140px;
+    font-family: poppins;
+    font-size: 24px;
+    position: relative;
+    top:27px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+}
+.judul2{
+  margin-left: 110px;
+  font-family: poppins;
+  font-size: 23px;
+  position: relative;
+  top:27px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 600;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    place-items: center;
+    /* Atur lebar minimum dan fraksi maksimum untuk setiap kotak */
+  }
+  
+  .box {
+    background-color: #fff;
+    padding: 20px;
+    height: 220px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid rgba(222, 222, 222, 1);
+    border-radius: 8px;
+  }
+  #box1{
+    width: 340px;
+    margin-left: 100px;
+    top:40px;
+    position: relative;
+  }
+  #box2{
+    width: 340px;
+    top:40px;
+    position: relative;
+  }
+  #box3{
+    width: 340px;
+    top:40px;
+    margin-right: 100px;
+    position: relative;
+  }
+  .imgmakanan{
+    position: relative;
+    top:20px;
+    cursor: pointer;
+  }
+  .textmakanan{
+    margin-top: 40px;
+    font-family: poppins;
+    font-weight: 500;
+  }
+  .garis{
+    margin-top: 100px;
+    width: 100%;
+  }
+  .all{
+    margin-top: -18px;
+    color: rgba(227, 113, 45, 1);
+    font-size:17px;
+    margin-right: 100px;
+    font-weight: 600;
+    font-family: poppins;
+  }
+
+  
+@media screen and (max-width:1172px){
+  .slibe{
+    width: 100%;
+    background: #2C6752;
+    height:250px;
+    margin-top: -50px;
+  }
+  .gallery{
+    width: 900px;
+  }
+  .boxsaldo{
+    width: 1000px;
+  }
+  #btnisi{
+    left:860px;
+  }
+  .box {
+    height: 220px;
+  }
+  #box1{
+    width: 300px;
+  }
+  #box2{
+    width: 300px;
+  }
+  #box3{
+    width: 300px;
+  }
+  #textnav{
+    margin-right: 5px;
+    margin-left: 0px;
+  }
+} 
+
+@media screen and (max-width:1050px){
+  .gallery{
+    width: 750px;
+  }
+  .boxsaldo{
+    width: 850px;
+  }
+  #btnisi{
+    left:710px;
+  }
+  .box {
+    height: 200px;
+  }
+  #box1{
+    width: 260px;
+  }
+  #box2{
+    width: 260px;
+  }
+  #box3{
+    width: 260px;
+  }
+  #textnav{
+    margin-right: 5px;
+    margin-left: 0px;
+  }
+} 
+
+
+@media screen and (max-width:916px){
+  .gallery{
+    width: 700px;
+  }
+  .boxsaldo{
+    width: 760px;
+  }
+  #btnisi{
+    left:620px;
+  }
+  .box {
+    height: 180px;
+  }
+  #box1{
+    width: 230px;
+  }
+  #box2{
+    width: 230px;
+  }
+  #box3{
+    width: 230px;
+  }
+  .imgmakanan{
+    top: 10px;
+    width: 90px;
+  }
+} 
+@media screen and (max-width:826px){
+  .gallery{
+    width: 640px;
+  }
+  .boxsaldo{
+    width: 700px;
+  }
+  #btnisi{
+    left:570px;
+  }
+  .box {
+    height: 150px;
+  }
+  #box1{
+    width: 200px;
+  }
+  #box2{
+    width: 200px;
+  }
+  #box3{
+    width: 200px;
+  }
+  .imgmakanan{
+    top: 0px;
+    width: 90px;
+  }
+  .textmakanan{
+    margin-top: 5px;
+  }
+} 
+
+@media screen and (max-width:735px){
+  .gallery{
+    width: 560px;
+  }
+  .saldo{
+    top:-56px;
+  }
+  .boxsaldo{
+    width: 600px;
+    height: 70px;
+  }
+  .icon{
+    top:14px;
+}
+  .totalsaldo{
+    top:-16px;
+}
+  #btnisi{
+    left:470px;
+    top:-110px;
+  }
+  .box {
+    height: 150px;
+  }
+  #box1{
+    width: 200px;
+    margin-left: 40px;
+  }
+  #box2{
+    width: 200px;
+  }
+  #box3{
+    width: 200px;
+    margin-right: 50px;
+  }
+  .imgmakanan{
+    top: 0px;
+    width: 90px;
+  }
+  .textmakanan{
+    margin-top: 5px;
+  }
+  .judul1{
+    margin-left: 80px;
+}
+} 
+@media screen and (max-width:641px){
+  .gallery{
+    width: 500px;
+  }
+  .saldo{
+    top:-56px;
+  }
+  #logo{
+    position: relative;
+    left:60px;
+}
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    place-items: center;
+  }
+  .all{
+    margin-right: 70px;
+    font-size:15px;
+  }
+  .judul2{
+    margin-left: 50px;
+    font-size: 20px;
+  }
+  .boxsaldo{
+    width: 550px;
+    height: 70px;
+  }
+  .icon{
+    top:14px;
+}
+  .totalsaldo{
+    top:-16px;
+}
+  #btnisi{
+    left:420px;
+    top:-110px;
+  }
+  .box {
+    height: 130px;
+  }
+  #box1{
+    width: 170px;
+    margin-left: 40px;
+  }
+  #box2{
+    width: 170px;
+  }
+  #box3{
+    width: 170px;
+    margin-right: 50px;
+  }
+  .imgmakanan{
+    top: 0px;
+    width: 60px;
+  }
+  .textmakanan{
+    margin-top: 5px;
+  }
+  .judul1{
+    margin-left: 80px;
+}
+} 
+@media screen and (max-width:561px){
+  .gallery{
+    width: 430px;
+  }
+  .saldo{
+    top:-56px;
+  }
+  #logo{
+    position: relative;
+    left:60px;
+}
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    place-items: center;
+  }
+  .all{
+    margin-right: 70px;
+    font-size:15px;
+  }
+  .judul2{
+    margin-left: 50px;
+    font-size: 20px;
+  }
+  .boxsaldo{
+    width: 480px;
+    height: 70px;
+  }
+  .icon{
+    top:14px;
+}
+  .totalsaldo{
+    top:-16px;
+}
+  #btnisi{
+    left:350px;
+    top:-110px;
+  }
+  .box {
+    height: 130px;
+  }
+  #box1{
+    width: 130px;
+    margin-left: 40px;
+  }
+  #box2{
+    width: 130px;
+  }
+  #box3{
+    width: 130px;
+    margin-right: 50px;
+  }
+  .imgmakanan{
+    top: 0px;
+    width: 60px;
+  }
+  .textmakanan{
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .judul1{
+    margin-left: 80px;
+}
+} 
+@media screen and (max-width:487px){
+  .gallery{
+    width: 430px;
+  }
+  .saldo{
+    top:-56px;
+  }
+  #logo{
+    position: relative;
+    left:60px;
+}
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    place-items: center;
+  }
+  .all{
+    margin-right: 30px;
+    font-size:15px;
+  }
+  .judul2{
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  .boxsaldo{
+    width: 440px;
+    height: 70px;
+  }
+  .icon{
+    top:14px;
+}
+  .totalsaldo{
+    top:-16px;
+}
+  #btnisi{
+    left:300px;
+    top:-110px;
+  }
+  .box {
+    height: 130px;
+  }
+  #box1{
+    width: 130px;
+    margin-left: 40px;
+  }
+  #box2{
+    width: 130px;
+  }
+  #box3{
+    width: 130px;
+    margin-right: 50px;
+  }
+  .imgmakanan{
+    top: 0px;
+    width: 60px;
+  }
+  .textmakanan{
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  .judul1{
+    margin-left: 80px;
+}
+} 
+@media screen and (max-width:453px){
+  .gallery{
+    width: 390px;
+    margin-top: 40px;
+  }
+  .saldo{
+    top:-50px;
+    margin-left: 80px;
+  }
+  #logo{
+    position: relative;
+    left:60px;
+}
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    place-items: center;
+  }
+  .all{
+    margin-right: 30px;
+    font-size:13px;
+  }
+  .judul2{
+    margin-left: 30px;
+    font-size: 17px;
+  }
+  .boxsaldo{
+    width: 390px;
+    height: 70px;
+  }
+  .icon{
+    top:14px;
+}
+  .totalsaldo{
+    top:-35px;
+}
+  #btnisi{
+    left:260px;
+    top:-110px;
+  }
+  .box {
+    height: 115px;
+  }
+  #box1{
+    width: 115px;
+    margin-left: 40px;
+  }
+  #box2{
+    width: 115px;
+  }
+  #box3{
+    width: 115px;
+    margin-right: 50px;
+  }
+  .imgmakanan{
+    top: 0px;
+    width: 55px;
+  }
+  .textmakanan{
+    margin-top: 10px;
+    font-size: 12.5px;
+  }
+  .judul1{
+    margin-left: 40px;
+}
+.gallery div img{
+  width: 300px;
+  margin-left: 25px;
+  border-radius: 6px;
+}
+} 
+@media screen and (max-width:427px){
+  .gallery div img{
+    margin-left: 17px;
+  }
+}
